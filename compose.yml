@@ -1,0 +1,17 @@
+services:
+  surreal:
+    image: surrealdb/surrealdb:latest
+    container_name: demo_surreal
+    user: root
+    ports:
+      - 8001:8000
+    volumes:
+      - surreal:/data/
+    command:
+      - start
+      - --user=root
+      - --pass=slurp
+      - rocksdb:/data/slurp.db
+
+volumes:
+  surreal:
