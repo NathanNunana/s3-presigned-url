@@ -3,9 +3,12 @@ module example/s3-demo
 go 1.21.4
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.32.4
+	github.com/aws/aws-sdk-go-v2 v1.32.5
 	github.com/aws/aws-sdk-go-v2/config v1.28.3
+	github.com/aws/aws-sdk-go-v2/feature/cloudfront/sign v1.8.1
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.66.3
+	github.com/joho/godotenv v1.5.1
+	github.com/surrealdb/surrealdb.go v0.3.0
 )
 
 require (
@@ -23,10 +26,9 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sso v1.24.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.28.4 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.32.4 // indirect
-	github.com/aws/smithy-go v1.22.0 // indirect
+	github.com/aws/smithy-go v1.22.1 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
 	github.com/gofrs/uuid v4.4.0+incompatible // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
-	github.com/surrealdb/surrealdb.go v0.3.0 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 )
