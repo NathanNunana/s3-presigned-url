@@ -45,15 +45,6 @@ func NewS3Client(bucketName, awsProfile, cfKeyID, privKey string) (*S3Client, er
 
 	client := s3.NewFromConfig(cfg)
 
-	// block, _ := os.Open(privKeyPath)
-	// if block == nil {
-	// 	return nil, fmt.Errorf("failed to open block")
-	// }
-
-	// privKey, err := sign.LoadPEMPrivKey(block)
-	// if err != nil {
-	// 	return nil, fmt.Errorf("Failed to load private key, err: %s\n", err.Error())
-	// }
 	rsaPrivKey, err := rsaParser(privKey)
 	if err != nil {
 		return nil, err
